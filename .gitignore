@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+restricted/
+.assignment.lock
+**/RESTRICTED_*
+enrollment_log.csv
+unblinding_log.csv
