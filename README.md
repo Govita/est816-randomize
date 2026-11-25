@@ -92,11 +92,3 @@ python3 est816_randomize.py unblind \
 ```bash
 python3 -m unittest discover -s tests
 ```
-
-## Wording for the protocol
-
-This can replace the empty "Sequence generation and allocation implementation" section.
-
-> The randomization sequence will be generated before enrollment by personnel who are not involved in recruitment, outcome assessment or Bioyon result generation. It will use permuted blocks with a 2:1 ratio, implemented in Python with the standard random-number generator and an integer seed. No stratification will be used. Block sizes will vary while preserving a 2:1 ratio within every block. The realized block-size schedule, random seed, Python version, program hash and sequence checksum will be retained in a restricted generation record. An independent person will confirm that the sequence contains 40 EST-816 and 20 placebo allocations and that regenerating it from the recorded seed reproduces it, and will approve it before the first kit is packed. Authorized unblinded personnel will pack identical sequentially numbered kits from the restricted packing list. After consent and eligibility confirmation, the participant will receive the next unused randomization number and its matching kit. Recruiting staff will be told only that kit number. The full list will remain restricted to the allocation-list holders. Emergency unblinding of an assigned kit will be logged with the requester and the reason.
-
-The current protocol names the allocation-list holders in Section 5. The person who holds this list and packs the kits should not be the person who calculates Bioyon results.
